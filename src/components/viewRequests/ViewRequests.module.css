@@ -1,0 +1,47 @@
+.emptyRow{
+    border:none;
+}
+.emptyRow > td{
+    height: 20px;
+}
+table{
+    width: 75%;
+    margin: 20px auto 20px auto;
+    text-align: left;
+}
+
+.bodyRow{
+    border:2px dashed gray;
+    margin-top: 20px;
+    background-color: rgba(0,0,255,0.2);
+}
+.bodyRow > td{
+    height: 50px;
+}
+
+.pageBox{
+    display: flex;
+    width: 75%;
+    align-items: center;
+    margin: auto;
+}
+.rows{
+    width: 15%;
+}
+.page{
+    display: flex;
+    width: 85%;
+    justify-content: center;
+}
+.page button{
+    margin: 0px 10px 0px 0px;
+    border-radius: 20%;
+    padding: 0px 10px 0px 10px;
+}
+.activepage{
+    background-color: rgba(0,0,255,0.8);
+}
+
+button:hover{
+    background-color: rgba(0,0,255,0.8);
+}

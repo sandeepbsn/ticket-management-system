@@ -1,0 +1,72 @@
+.ticket{
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.messagecontainer{
+    display:flex;
+    flex-direction: column;
+    border:1px solid gray;
+    margin:10px
+}
+.messagecontainer > div{
+    text-align: left;
+    padding: 2px;
+}
+
+.replybg{
+    background-color: rgba(0,0,255,0.1);
+}
+.replybg > div{
+    margin: 10px;
+}
+
+.replycontainer{
+    display:flex;
+    align-items: center;
+}
+
+.replybox{
+    width:90%;
+    margin-right:10px;
+}
+
+.buttons{
+    background-color: indigo;
+    border:2px solid rgb(163, 160, 160);
+    border-radius: 10%;
+    padding:4px 15px 5px 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.contentcontainer{
+    display:flex;
+}
+.contentmessage{
+    width:80%
+}
+.contentdate{
+    width: 20%;
+    margin-left:auto;
+    text-align: right;
+    font-size: small;
+    color: gray;
+}
+
+.userresponse{
+    padding-left: 10px;
+}
+
+.agentresponse{
+    padding-left: 20px;
+}
+.agenttitle{
+    color: indigo;
+    text-decoration: underline;
+}

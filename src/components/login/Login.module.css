@@ -1,0 +1,52 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.maindiv{
+    width:100%;
+    height: 76vh;;
+    margin:auto; 
+    background-image: url("/background.jpg");
+    background-size: cover;
+    padding-top:50px;
+    
+}
+
+form{
+    width: 35%;
+    height: 87%;
+    margin: auto;
+    background-color: white; 
+    padding:10px;   
+}
+input, select, button{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 2px;
+}
+
+form > div{
+    margin: 15px auto 15px auto;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+}
+
+.submit{
+    background-color: indigo;
+    color: white;
+    height: 40px;
+    border: None;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+.errorShow{
+    display: block;
+    color:red
+}
+.errorHide{
+    display: none;
+}

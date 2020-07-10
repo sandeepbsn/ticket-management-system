@@ -1,0 +1,10 @@
+insert into responses (message, ticket_id, date, time, person) values ('Nunc purus.', 1, '2020-07-12', '12:46:55', 'agent');
+insert into responses (message, ticket_id, date, time, person) values ('Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus.', 1, '2020-07-02', '7:36:05', 'agent');
+insert into responses (message, ticket_id, date, time, person) values ('Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.', 1, '2020-07-17', '23:16:45', 'agent');
+insert into responses (message, ticket_id, date, time, person) values ('Aenean sit amet justo. Morbi ut odio.', 1, '2020-06-27', '8:21:13', 'user');
+insert into responses (message, ticket_id, date, time, person) values ('Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 1, '2020-07-13', '9:29:49', 'user');
+insert into responses (message, ticket_id, date, time, person) values ('Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.', 1, '2020-07-17', '16:35:26', 'user');
+insert into responses (message, ticket_id, date, time, person) values ('Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 1, '2020-07-09', '18:11:34', 'agent');
+insert into responses (message, ticket_id, date, time, person) values ('Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', 1, '2020-06-20', '5:09:11', 'user');
+insert into responses (message, ticket_id, date, time, person) values ('Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.', 1, '2020-07-19', '2:47:34', 'user');
+insert into responses (message, ticket_id, date, time, person) values ('Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 1, '2020-06-23', '8:18:40', 'agent');

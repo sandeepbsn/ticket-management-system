@@ -1,0 +1,67 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.top{
+    height:30px;
+    border-radius: 3px 3px 0px 0px;
+    background-color: rgb(163, 160, 160);
+    display:flex;
+    align-items: center;
+}
+.middle{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    padding:0px 10px 0px 10px;
+    /* border:1px solid black; */
+}
+.middle div{
+    margin:0px 5px 0px 5px;
+}
+.support360{
+    font-size: small;
+    font-weight: 700;
+    color: indigo;
+}
+.divauto{
+    margin-left: auto !important;
+}
+
+.buttons{
+    background-color: white;
+    border:2px solid rgb(163, 160, 160);
+    border-radius: 10%;
+    padding:5px 10px 5px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: indigo;
+}
+.buttons:hover{
+    background-color: indigo;
+    color: white;
+}
+.register{
+    background-color: indigo;
+    color: white;
+    border:None;
+    border-radius: 5%;
+}
+
+.customerbuttons{
+    background-color: white;
+    border: none;
+}
+.customerbuttons:hover{
+    background-color: white;
+    border-bottom: 2px solid indigo;
+}
+.customer{
+    width:100%;
+    display: flex;
+    /* border:1px solid black; */
+    align-self: flex-end;
+    padding-bottom: 15px;
+}
+
+
