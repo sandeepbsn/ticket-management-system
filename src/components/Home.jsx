@@ -16,10 +16,10 @@ export default function Home(){
         console.log(userInfo)
         if(userInfo){
             if(userInfo['role'] === 'customer'){
-                history.push('/customer')
+                history.push('/raiserequest')
             }
             else{
-                history.push('/company')
+                history.push('/agentportal')
             }
         }
         else if(loginInfo){

@@ -17,7 +17,7 @@ export default function ViewRequests(){
     const rows_per_page = useSelector(state => state.customer.rows_per_page)
     const match = useRouteMatch()
 
-    const headers = ['Ticket ID', 'Subject', 'Company', 'Date', 'Response']
+    const headers = ['ID', 'Subject', 'Company', 'Date', 'Response']
 
     useEffect(()=>{
         if(requests.length === 0){

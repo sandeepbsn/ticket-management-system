@@ -11,10 +11,12 @@
     padding-top:50px;
     
 }
+.formbox{
+    height: 60%;
+}
 
 form{
     width: 35%;
-    height: 87%;
     margin: auto;
     background-color: white; 
     padding:10px;   
@@ -49,4 +51,17 @@ form > div{
 }
 .errorHide{
     display: none;
+}
+
+@media (min-width:200px) and (max-width: 500px){
+    form{
+        width: 80% !important;
+    }
+}
+
+
+@media (min-width:501px) and (max-width: 1280px){
+    .formbox{
+        height: 50%;
+    }
 }

@@ -89,7 +89,7 @@ export default function OneRequest(){
                             </div>
                             <div className={styles.contentdate}>
                                 <div>
-                                    {`Sent on: ${request[0].date} ${request[0].time.slice(0,request[0].time.length - 3)} hrs`}
+                                    {`${request[0].date} ${request[0].time.slice(0,request[0].time.length - 3)} hrs`}
                                 </div>
                             </div>
                         </div>

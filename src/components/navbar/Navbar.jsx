@@ -19,7 +19,7 @@ export default function(){
 
             <div className={styles.middle}>
                 <div>
-                    <div>
+                    <div className="forimage">
                         <img src="/conversations.png" width = "100px" height="100px" alt="logo"></img>    
                     </div>
                     <div className={styles.support360}>

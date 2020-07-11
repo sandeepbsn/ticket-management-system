@@ -44,54 +44,56 @@ export default function Login(){
     console.log(loginInfo)
     return (
         <div className={styles.maindiv}>
-            <form onSubmit={(e)=>handleSubmit(e)}>
-                <div style={{"textAlign":"center"}}>
-                    <h4>LOG INTO YOUR PORTAL</h4>
-                </div>
-
-                <div>
-                    <div>
-                        Email ID
+            <div className={styles.formbox}>
+                <form onSubmit={(e)=>handleSubmit(e)}>
+                    <div style={{"textAlign":"center"}}>
+                        <h4>LOG INTO YOUR PORTAL</h4>
                     </div>
 
                     <div>
-                        <input name = "email" 
-                        value = {login.email}
-                        onChange = {(e)=>handleChange(e)}
-                        required
-                        placeholder="Email ID"/>
-                        {loginInfo?.loggedIn === "false" ? 
-                        <small className={styles.errorShow}>Username or password invalid</small>:
-                        <small className={styles.errorHide}>Username or password invalid</small>}
-                    </div>
-                </div>
+                        <div>
+                            Email ID
+                        </div>
 
-                <div>
+                        <div>
+                            <input name = "email" 
+                            value = {login.email}
+                            onChange = {(e)=>handleChange(e)}
+                            required
+                            placeholder="Email ID"/>
+                            {loginInfo?.loggedIn === "false" ? 
+                            <small className={styles.errorShow}>Username or password invalid</small>:
+                            <small className={styles.errorHide}>Username or password invalid</small>}
+                        </div>
+                    </div>
+
                     <div>
-                        Password
+                        <div>
+                            Password
+                        </div>
+
+                        <div>
+                            <input name = "password" 
+                            value = {login.password}
+                            onChange = {(e)=>handleChange(e)}
+                            type = "password"
+                            required
+                            placeholder="Password"/>
+                            {loginInfo?.loggedIn === "false" ? 
+                            <small className={styles.errorShow}>Username or password invalid</small>:
+                            <small className={styles.errorHide}>Username or password invalid</small>}
+                        </div>
                     </div>
+
+                    
 
                     <div>
-                        <input name = "password" 
-                        value = {login.password}
-                        onChange = {(e)=>handleChange(e)}
-                        type = "password"
-                        required
-                        placeholder="Password"/>
-                        {loginInfo?.loggedIn === "false" ? 
-                        <small className={styles.errorShow}>Username or password invalid</small>:
-                        <small className={styles.errorHide}>Username or password invalid</small>}
+                        <button className={styles.submit}>
+                            Login
+                        </button>
                     </div>
-                </div>
-
-                
-
-                <div>
-                    <button className={styles.submit}>
-                        Login
-                    </button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     )
 }

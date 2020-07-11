@@ -70,3 +70,10 @@
     color: indigo;
     text-decoration: underline;
 }
+
+
+@media (min-width:200px) and (max-width:500px){
+    *{
+        font-size: 10px;
+    }
+}

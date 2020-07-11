@@ -7,13 +7,14 @@
     padding-top:50px;
     
 }
-
 form{
-    width: 35%;
-    height: 87%;
+    width: 60%;
     margin: auto;
     background-color: white; 
     padding:10px;   
+}
+.formbox{
+    height: 90%;
 }
 input, select, button{
     width: 100%;
@@ -37,4 +38,23 @@ form > div{
     border: None;
     border-radius: 2px;
     font-size: 18px;
+}
+
+@media (min-width:200px) and (max-width: 500px){
+    form{
+        width: 80% !important;
+    }
+    .formbox{
+        height:90%;
+    }
+}
+
+
+@media (min-width:501px) and (max-width: 1280px){
+    form{
+        width: 40% !important;
+    }
+    .formbox{
+        height:70%;
+    }
 }

@@ -15,7 +15,7 @@ export default function Response(props){
                         </div>
                         <div className={styles.contentdate}>
                             <div>
-                                {`Sent on: ${item['date']} ${item['time'].slice(0,item['time'].length - 3)} hrs`}
+                                {`${item['date']} ${item['time'].slice(0,item['time'].length - 3)} hrs`}
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ export default function Response(props){
                         </div>
                         <div className={styles.contentdate}>
                             <div>
-                                {`Sent on: ${item['date']} ${item['time'].slice(0,item['time'].length - 3)} hrs`}
+                                {`${item['date']} ${item['time'].slice(0,item['time'].length - 3)} hrs`}
                             </div>
                         </div>
                     </div>

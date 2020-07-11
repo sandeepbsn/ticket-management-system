@@ -24,7 +24,7 @@ export default function Dashboard(){
     let temp_date
     let temp_tickets
     if(dategraph){
-        temp_date = dategraph.map(elem => elem.date)
+        temp_date = dategraph.map(elem => window.innerWidth <=500 ? elem['date'].slice(0,-5) : elem['date'])
         temp_tickets = dategraph.map(elem => elem.tickets)
     }
 
@@ -34,7 +34,7 @@ export default function Dashboard(){
         temp_status = statusgraph.map(elem => elem.status)
         temp_count = statusgraph.map(elem => elem.count)
     }
-    
+    console.log(temp_status)
     if(dategraph){
         return(
             <div>
@@ -44,15 +44,19 @@ export default function Dashboard(){
                     </div>
                     <div>
                         <Line data = {
-                            {
-                            labels:temp_date,
-                            datasets:[{
-                                label:"No. of Tickets",
-                                backgroundColor:'rgba(0,0,255,0.5)',
-                                data:temp_tickets
-                            }]
+                                {
+                                labels:temp_date,
+                                datasets:[{
+                                    label:"No. of Tickets",
+                                    backgroundColor:'rgba(0,0,255,0.5)',
+                                    data:temp_tickets
+                                }]
+                                }
                             }
-                        }/>
+                            options = {{
+                                responsive:true,
+                            }}
+                        />
                     </div>
                 </div>
 
@@ -65,15 +69,14 @@ export default function Dashboard(){
                                 {
                                 labels:temp_status,
                                 datasets:[{
-                                    label:"No. of Tickets",
-                                    backgroundColor:['rgba(0,0,255,0.5)', 'rgba(0,255,0,0.5)', 'rgba(255,0,0,0.5)'],
+                                    backgroundColor:['rgba(0,0,255,0.5)','rgba(255,0,0,0.5)', 'rgba(0,255,0,0.5)'],
                                     data:temp_count
                                 }]
                                 }
                             }
                             options = {{
                                 cutoutPercentage: 50,
-                                // circumference: Math.PI,
+                                responsive:true,
                                 legend: {
                                     position: 'bottom'
                                 },

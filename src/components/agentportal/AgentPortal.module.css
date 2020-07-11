@@ -35,12 +35,16 @@ table{
 
 .pageBox{
     display: flex;
+    flex-direction: column;
     width: 75%;
     align-items: center;
     margin: auto;
 }
+.pageBox > div{
+    margin: 10px;
+}
 .rows{
-    width: 15%;
+    width: 30%;
 }
 .page{
     display: flex;
@@ -62,4 +66,26 @@ button:hover{
 }
 .link{
     color: black;
+}
+
+
+@media (min-width:200px) and (max-width:768px){
+    *{
+        font-size: 10px;
+    }
+    .rows{
+        width:25%
+    }
+    table{
+        width:100% !important;
+    }
+}
+
+@media (min-width:796px) and (max-width:1280px){
+    .page{
+        width: 100%;
+    }
+    .rows{
+        width: 25%;
+    }
 }

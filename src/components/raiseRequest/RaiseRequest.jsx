@@ -48,68 +48,70 @@ export default function RaiseRequest(){
     console.log(request)
     return (
         <div className={styles.maindiv}>
-            <form onSubmit={(e)=>handleSubmit(e)}>
-                <div style={{"textAlign":"center"}}>
-                    <h4>Reach out to us, we're here for you</h4>
-                </div>
-
-                <div>
-                    <div>
-                        Company
+            <div className={styles.formbox}>
+                <form onSubmit={(e)=>handleSubmit(e)}>
+                    <div style={{"textAlign":"center"}}>
+                        <h4>Reach out to us, we're here for you</h4>
                     </div>
 
                     <div>
-                        <select name = "company_id"
-                        value = {request.company_id}
-                        required
-                        onChange = {(e)=>handleChange(e)}
-                        className={styles.role}>
-                            {companies.length !== 0 ? 
-                            companies.map(company => {
-                                return (
-                                    <option key = {uuidv4()} value = {company[0]}>{company[1]}</option>
-                                )
-                            }):
-                            <option>Loading...</option>}
-                        </select>
-                    </div>
-                </div>
+                        <div>
+                            Company
+                        </div>
 
-                <div>
-                    <div>
-                        Subject
-                    </div>
-
-                    <div>
-                        <input name = "subject" 
-                        value = {request.subject}
-                        onChange = {(e)=>handleChange(e)}
-                        required/>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        Content
+                        <div>
+                            <select name = "company_id"
+                            value = {request.company_id}
+                            required
+                            onChange = {(e)=>handleChange(e)}
+                            className={styles.role}>
+                                {companies.length !== 0 ? 
+                                companies.map(company => {
+                                    return (
+                                        <option key = {uuidv4()} value = {company[0]}>{company[1]}</option>
+                                    )
+                                }):
+                                <option>Loading...</option>}
+                            </select>
+                        </div>
                     </div>
 
                     <div>
-                        <textarea name = "content" 
-                        value = {request.content}
-                        onChange = {(e)=>handleChange(e)}
-                        required/>
-                        {reqMessage ? 
-                        <small className={styles.showsuccess}>{reqMessage}</small>:
-                        <small className={styles.hidesuccess}>{reqMessage}</small>}
-                    </div>
-                </div>
+                        <div>
+                            Subject
+                        </div>
 
-                <div>
-                    <button className={styles.submit}>
-                        Submit
-                    </button>
-                </div>
-            </form>
+                        <div>
+                            <input name = "subject" 
+                            value = {request.subject}
+                            onChange = {(e)=>handleChange(e)}
+                            required/>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            Content
+                        </div>
+
+                        <div>
+                            <textarea name = "content" 
+                            value = {request.content}
+                            onChange = {(e)=>handleChange(e)}
+                            required/>
+                            {reqMessage ? 
+                            <small className={styles.showsuccess}>{reqMessage}</small>:
+                            <small className={styles.hidesuccess}>{reqMessage}</small>}
+                        </div>
+                    </div>
+
+                    <div>
+                        <button className={styles.submit}>
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }

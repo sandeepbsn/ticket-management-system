@@ -76,12 +76,12 @@ export default function OneComplaint(){
     if(complaint){
         return(
             <div>
-                <div className="d-flex border align-items-center">
+                <div className="d-flex align-items-center">
                     <div className={styles.ticket}>
                         {`Ticket ${params.complaint_id}`}
                     </div>
                     
-                    <div>
+                    <div className={styles.selectdiv}>
                         <select name = 'status'
                         onChange = {(e)=>handleStatus(e)}>
                             <option>Status</option>
@@ -111,7 +111,7 @@ export default function OneComplaint(){
                             </div>
                             <div className={styles.contentdate}>
                                 <div>
-                                    {`Sent on: ${complaint[0].date} ${complaint[0].time.slice(0,complaint[0].time.length - 3)} hrs`}
+                                    {`${complaint[0].date} ${complaint[0].time.slice(0,complaint[0].time.length - 3)} hrs`}
                                 </div>
                             </div>
                         </div>

@@ -45,76 +45,78 @@ export default function Registration(){
     
     return (
         <div className={styles.maindiv}>
-            <form onSubmit={(e)=>handleSubmit(e)}>
-                <div style={{"textAlign":"center"}}>
-                    <h4>A NEW REGISTRATION</h4>
-                </div>
-                <div>
+            <div className={styles.formbox}>
+                <form onSubmit={(e)=>handleSubmit(e)}>
+                    <div style={{"textAlign":"center"}}>
+                        <h4>A NEW REGISTRATION</h4>
+                    </div>
                     <div>
-                        Name
+                        <div>
+                            Name
+                        </div>
+
+                        <div>
+                            <input name = "name"
+                            value = {user.name}
+                            onChange = {(e)=>handleChange(e)}
+                            required 
+                            placeholder="Name"/>
+                        </div>
                     </div>
 
                     <div>
-                        <input name = "name"
-                        value = {user.name}
-                        onChange = {(e)=>handleChange(e)}
-                        required 
-                        placeholder="Name"/>
-                    </div>
-                </div>
+                        <div>
+                            Email ID
+                        </div>
 
-                <div>
-                    <div>
-                        Email ID
-                    </div>
-
-                    <div>
-                        <input name = "email" 
-                        value = {user.email}
-                        onChange = {(e)=>handleChange(e)}
-                        required
-                        placeholder="Email ID"/>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        Password
+                        <div>
+                            <input name = "email" 
+                            value = {user.email}
+                            onChange = {(e)=>handleChange(e)}
+                            required
+                            placeholder="Email ID"/>
+                        </div>
                     </div>
 
                     <div>
-                        <input name = "password" 
-                        value = {user.password}
-                        onChange = {(e)=>handleChange(e)}
-                        type = "password"
-                        required
-                        placeholder="Password"/>
-                    </div>
-                </div>
+                        <div>
+                            Password
+                        </div>
 
-                <div>
+                        <div>
+                            <input name = "password" 
+                            value = {user.password}
+                            onChange = {(e)=>handleChange(e)}
+                            type = "password"
+                            required
+                            placeholder="Password"/>
+                        </div>
+                    </div>
+
                     <div>
-                        Role
+                        <div>
+                            Role
+                        </div>
+
+                        <div>
+                            <select name = "role"
+                            value = {user.role}
+                            required
+                            onChange = {(e)=>handleChange(e)}
+                            className={styles.role}>
+                                <option value = "company">Company</option>
+                                <option value = "customer">Customer</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div>
-                        <select name = "role"
-                        value = {user.role}
-                        required
-                        onChange = {(e)=>handleChange(e)}
-                        className={styles.role}>
-                            <option value = "company">Company</option>
-                            <option value = "customer">Customer</option>
-                        </select>
+                        <button className={styles.submit}>
+                            Submit
+                        </button>
                     </div>
-                </div>
-
-                <div>
-                    <button className={styles.submit}>
-                        Submit
-                    </button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     )
 }

@@ -70,3 +70,19 @@
     color: indigo;
     text-decoration: underline;
 }
+
+.selectdiv{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.selectdiv > select{
+    border: 1px solid rgb(127, 158, 168);
+    width: 150px;
+    height: 40px;
+}
+
+@media (min-width:200px) and (max-width:500px){
+    *{
+        font-size: 10px;
+    }
+}
