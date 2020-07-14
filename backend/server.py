@@ -84,11 +84,11 @@ def login():
 @app.route('/<token>', methods = ['GET'])
 def tokenValidation(token):
     
-    key = "secret"
+   key = "secret"
 
-    decoded = jwt.decode(token, key)
+   decoded = jwt.decode(token, key)
 
-    return json.dumps(decoded)
+   return json.dumps(decoded)
 
 
 #function to fetch companies
