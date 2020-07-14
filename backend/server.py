@@ -8,7 +8,7 @@ from flask_cors import CORS
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['MYSQL_HOST'] = "localhost"
+app.config['MYSQL_HOST'] = "database-1.cqxrv898tj74.ap-south-1.rds.amazonaws.com"
 app.config['MYSQL_USER'] = "root"
 app.config['MYSQL_PASSWORD'] = "Password_123"
 app.config['MYSQL_DB'] = "tms"
