@@ -10,7 +10,7 @@ from datetime import datetime
 app = Flask(__name__)
 app.config['MYSQL_HOST'] = "database-1.cqxrv898tj74.ap-south-1.rds.amazonaws.com"
 app.config['MYSQL_USER'] = "root"
-app.config['MYSQL_PASSWORD'] = "Password_123"
+app.config['MYSQL_PASSWORD'] = "Findingmyself_0419"
 app.config['MYSQL_DB'] = "tms"
 
 CORS(app)
@@ -55,40 +55,40 @@ def register():
         return {"message":"User registration successfull", "registered":"true"}
 
 
-# # function to login user
-# @app.route('/login', methods = ['POST'])
-# def login():
-#     data = request.get_json()
+# function to login user
+@app.route('/login', methods = ['POST'])
+def login():
+    data = request.get_json()
 
-#     logData = readTables('users')
+    logData = readTables('users')
 
-#     loggedIn = False
-#     for info in logData:
-#         if(data['email'] == info[2]):
-#             if(data['password'] == info[3]):
-#                 data['id'] = info[0]
-#                 data['role'] = info[4]
-#                 loggedIn = True
-#                 break
+    loggedIn = False
+    for info in logData:
+        if(data['email'] == info[2]):
+            if(data['password'] == info[3]):
+                data['id'] = info[0]
+                data['role'] = info[4]
+                loggedIn = True
+                break
 
-#     if(loggedIn):
-#         payload = {"id":data['id'],"email":data['email'], "password":data['password'],"role":data['role'], "loggedIn":"true"}
-#         key = 'secret'
+    if(loggedIn):
+        payload = {"id":data['id'],"email":data['email'], "password":data['password'],"role":data['role'], "loggedIn":"true"}
+        key = 'secret'
 
-#         encoded_jwt = jwt.encode(payload, key)
-#         return json.dumps({"token":encoded_jwt.decode(), "loggedIn":"true"})
-#     else:
-#         return{"message":"Username or password invalid","loggedIn":"false"}
+        encoded_jwt = jwt.encode(payload, key)
+        return json.dumps({"token":encoded_jwt.decode(), "loggedIn":"true"})
+    else:
+        return{"message":"Username or password invalid","loggedIn":"false"}
 
-# #function to check token
-# @app.route('/<token>', methods = ['GET'])
-# def tokenValidation(token):
+#function to check token
+@app.route('/<token>', methods = ['GET'])
+def tokenValidation(token):
     
-#     key = "secret"
+    key = "secret"
 
-#     decoded = jwt.decode(token, key)
+    decoded = jwt.decode(token, key)
 
-#     return json.dumps(decoded)
+    return json.dumps(decoded)
 
 
 
