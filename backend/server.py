@@ -91,6 +91,7 @@ def register():
 #     return json.dumps(decoded)
 
 
+
 #function to fetch companies
 @app.route('/companies', methods = ['GET'])
 def fetchCompanies():
