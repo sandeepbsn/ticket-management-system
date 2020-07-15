@@ -16,7 +16,7 @@ export const clearMessage = () => ({
 
 export const userRegistration = payload => dispatch => {
     
-    return axios.post('/register',{
+    return axios.post('https://tmsapi.sandeepbabu.tech/register',{
         ...payload
     })
     .then(res=>dispatch(registerUser(res.data)))

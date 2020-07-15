@@ -63,13 +63,13 @@ export const getStatusGraph = (payload) => ({
 
 
 export const fetchCompanies = payload => dispatch => {
-    return axios.get('/companies')
+    return axios.get('https://tmsapi.sandeepbabu.tech/companies')
     .then(res => dispatch(fetchCompaniesSuccess(res.data)))
     .catch(err => console.log(err))
 }
 
 export const registerRequest = payload => dispatch => {
-    return axios.post('/addrequest', {
+    return axios.post('https://tmsapi.sandeepbabu.tech/addrequest', {
         ...payload
     })
     .then(res => dispatch(addRequest(res.data)))
@@ -77,7 +77,7 @@ export const registerRequest = payload => dispatch => {
 }
 
 export const fetchRequests = payload => dispatch => {
-    return axios.post('/getrequests', {
+    return axios.post('https://tmsapi.sandeepbabu.tech/getrequests', {
         "id":payload
     })
     .then(res => dispatch(getRequests(res.data)))
@@ -85,7 +85,7 @@ export const fetchRequests = payload => dispatch => {
 }
 
 export const fetchComplaints = payload => dispatch => {
-    return axios.post('/getcomplaints',{
+    return axios.post('https://tmsapi.sandeepbabu.tech/getcomplaints',{
         "id":payload
     })
     .then(res => dispatch(getComplaints(res.data)))
@@ -93,33 +93,33 @@ export const fetchComplaints = payload => dispatch => {
 }
 
 export const fetchResponses = payload => dispatch => {
-    return axios.get(`/getresponses/${payload}`)
+    return axios.get(`https://tmsapi.sandeepbabu.tech/getresponses/${payload}`)
     .then(res => dispatch(getResponses(res.data)))
     .catch(err => console.log(err))
 }
 
 export const sendResponse = payload => dispatch => {
-    return axios.post('/addresponse', {
+    return axios.post('https://tmsapi.sandeepbabu.tech/addresponse', {
         ...payload
     })
     .catch(err => console.log(err))
 }
 
 export const changeStatus = payload => dispatch => {
-    return axios.post('/changestatus', {
+    return axios.post('https://tmsapi.sandeepbabu.tech/changestatus', {
         ...payload
     })
     .catch(err => console.log(err))
 }
 
 export const getDateTickets = payload => dispatch => {
-    return axios.get(`/getdatetickets/${payload}`)
+    return axios.get(`https://tmsapi.sandeepbabu.tech/getdatetickets/${payload}`)
     .then(res => dispatch(getDateGraph(res.data)))
     .catch(err => console.log(err))
 }
 
 export const getStatusTickets = payload => dispatch => {
-    return axios.get(`/getstatus/${payload}`)
+    return axios.get(`https://tmsapi.sandeepbabu.tech/getstatus/${payload}`)
     .then(res =>dispatch(getStatusGraph(res.data)))
     .catch(err => console.log(err))
 }

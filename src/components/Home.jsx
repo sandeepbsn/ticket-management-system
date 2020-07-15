@@ -23,7 +23,7 @@ export default function Home(){
             }
         }
         else if(loginInfo){
-            dispatch(fetchUserInfo(`/${token}`))
+            dispatch(fetchUserInfo(`https://tmsapi.sandeepbabu.tech/${token}`))
         }
         else{
             history.push('/login')
