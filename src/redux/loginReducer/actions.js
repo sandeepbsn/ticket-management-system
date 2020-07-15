@@ -20,7 +20,7 @@ export const logoutUser = () => ({
 
 
 export const loginUser = payload => dispatch => {
-    return axios.post('/login', {
+    return axios.post('https://tmsapi.sandeepbabu.tech/login', {
         ...payload
     })
     .then(res => dispatch(loginUserSuccess(res.data)))
