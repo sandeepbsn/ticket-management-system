@@ -16,6 +16,7 @@ export default function Routes(){
     return (
         <div>
             <Switch>
+                <Route path = "/" exact render = {(props)=><Home {...props}/>}/>
                 <Route path = "/agentportal/:complaint_id" render = {(props)=><OneComplaint {...props}/>}/>
                 <Route path = "/agentportal" render = {(props)=><AgentPortal {...props}/>}/>
                 <Route path = "/dashboard" render = {(props)=><Dashboard {...props}/>}/>
