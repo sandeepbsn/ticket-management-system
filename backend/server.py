@@ -9,7 +9,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.config['MYSQL_HOST'] = "database-1.cqxrv898tj74.ap-south-1.rds.amazonaws.com"
-app.config['MYSQL_USER'] = "root"
+app.config['MYSQL_USER'] = "admin"
 app.config['MYSQL_PASSWORD'] = "Findingmyself_0419"
 app.config['MYSQL_DB'] = "tms"
 
