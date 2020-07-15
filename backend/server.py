@@ -16,7 +16,6 @@ app.config['MYSQL_DB'] = "tms"
 CORS(app)
 mysql = MySQL(app)
 
-
 # function to read get the table content
 def readTables(tablename):
     cur = mysql.connection.cursor()
@@ -32,6 +31,11 @@ def readTables(tablename):
     return table
 
 
+# home page
+@app.route('/', methods = ['GET'])
+def home():
+    return "Welcome home"
+    
 #function to register user
 @app.route('/register', methods = ['POST'])
 def register():

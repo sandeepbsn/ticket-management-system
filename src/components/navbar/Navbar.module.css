@@ -63,7 +63,8 @@
     align-self: flex-end;
     padding-bottom: 15px;
 }
-img{
+
+.middle img{
     width:100px;
     height:100px;
 }
@@ -75,7 +76,7 @@ img{
     .middle{
         height: 110px;
     }
-    img{
+    .middle img{
         width:75px;
         height:75px;
     }
