@@ -1,6 +1,17 @@
 # Ticket Management System (support360)
   An application that helps the customer to raise complaints against organizations and resolve it with the help of the agents from those respective organizations
   
+### npm dependencies
+react-router-dom
+redux
+redux-thunk
+react-redux
+react-bootstrap
+bootstrap
+axios
+react-chartjs
+react-chartjs-2
+  
 ### Functionalities
 **Customer**
 1. Raise a ticket
