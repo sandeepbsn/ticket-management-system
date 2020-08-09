@@ -24,6 +24,7 @@
 <br/>
 
 **Status of tickets**
+<br/>
 <img src="https://github.com/sandeepbsn/ticket-management-system/blob/master/public/tmsgraph2.png" width="650" height="500" alt="ticket status"/>
 
 ### Resolve tickets
