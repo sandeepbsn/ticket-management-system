@@ -2,15 +2,15 @@
   An application that helps the customer to raise complaints against organizations and resolve it with the help of the agents from those respective organizations
   
 ### npm dependencies
-react-router-dom
-redux
-redux-thunk
-react-redux
-react-bootstrap
-bootstrap
-axios
-react-chartjs
-react-chartjs-2
+  1. react-router-dom
+  2. redux
+  3. redux-thunk
+  4. react-redux
+  5. react-bootstrap
+  6. bootstrap
+  7. axios
+  8. react-chartjs
+  9. react-chartjs-2
   
 ### Functionalities
 **Customer**
