@@ -23,7 +23,7 @@ export default function Home(){
             }
         }
         else if(loginInfo){
-            dispatch(fetchUserInfo(`https://support360.herokuapp.com//${token}`))
+            dispatch(fetchUserInfo(`https://support360.herokuapp.com/${token}`))
         }
         else{
             history.push('/login')

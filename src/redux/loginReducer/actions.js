@@ -20,7 +20,7 @@ export const logoutUser = () => ({
 
 
 export const loginUser = payload => dispatch => {
-    return axios.post('https://support360.herokuapp.com//login', {
+    return axios.post('https://support360.herokuapp.com/login', {
         ...payload
     })
     .then(res => dispatch(loginUserSuccess(res.data)))
